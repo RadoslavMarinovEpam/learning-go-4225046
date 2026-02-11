@@ -5,5 +5,13 @@ import (
 )
 
 func main() {
-	fmt.Println("Structs")
+	poodle := Dog{"Poodle", 10}
+	fmt.Println(poodle)
+	fmt.Printf("%+v\n", poodle)
+
+}
+
+type Dog struct {
+	Breed  string
+	Weight int
 }
